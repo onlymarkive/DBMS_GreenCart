@@ -1,42 +1,82 @@
-# GreenCartApp
+# 🌿 GreenCart Application
 
-**Name:** Rectin, Marielle J.  
+**Developed by:** Rectin, Marielle J.  
 **Section:** CS-2101  
-**Course:** 211: Database Management System  
+**Course:** 211: DATABASE MANAGEMENT SYSTEM
 
-## Introduction
-GreenCartApp is a Java console-based application integrated with a MySQL database to provide a seamless shopping experience. The application emphasizes eco-friendly shopping practices and promotes responsible consumption and production, aligning with Sustainable Development Goal 12.
+---
 
-## Description
-The GreenCartApp allows users to sign up, log in, manage their budgets, and maintain a shopping cart. The app integrates MySQL for efficient data storage and retrieval, ensuring a robust and scalable solution. Users can add items to their cart, view and manage their shopping lists, and earn reward points for their purchases. Additionally, each purchase comes with an eco-friendly tip to encourage sustainable practices.
+## 📖 Introduction
+GreenCart is a Java-based console application with MySQL database integration, designed to promote eco-friendly shopping. The application allows users to manage their shopping experience responsibly by setting budgets, earning rewards, and receiving eco-friendly tips. GreenCart aligns with sustainable development principles by encouraging environmentally conscious choices.
 
-## Features
-- **User Authentication**: Supports user sign-up and login functionalities with secure password storage.
-- **Budget Management**: Allows users to set, view, and modify their budgets.
-- **Shopping Cart Operations**: Users can add, remove, and view items in their shopping cart.
-- **Reward Points System**: Earn points based on purchases, promoting sustainable shopping habits.
-- **Eco-Friendly Tips**: Provides helpful suggestions to reduce environmental impact with each purchase.
-- **Database Integration**: Utilizes MySQL to store user data, shopping cart details, and budgets.
+---
 
-## Database Schema
-The project includes an `init.sql` file located in the `db` directory to initialize the database. This file contains SQL commands to:
-1. Create necessary tables (e.g., users, items, cart).
-2. Define keys and constraints for data integrity.
-3. Insert initial data for testing purposes.
+## ✨ Features
+- **👤 User Account Management**: Users can sign up, log in, and manage their accounts securely.
+- **💳 Budget Management**: Users can set, view, and modify their budgets for shopping.
+- **🛒 Shopping Cart Operations**:
+  - Add items to the cart with type, price, and quantity.
+  - Remove items from the cart.
+  - View a detailed shopping list with totals.
+- **🎁 Reward System**: Earn points based on purchases, encouraging sustainable shopping habits.
+- **🌱 Eco-Friendly Tips**: Receive helpful suggestions to reduce waste and shop sustainably.
 
-## How to Run
-1. **Database Setup**:
-   - Ensure MySQL is installed and running.
-   - Import the `init.sql` file to initialize the database schema and data.
+---
 
-2. **Configure Database Connection**:
-   - Update the database credentials in the `DatabaseConnection.java` file to match your local setup.
+## 🛠️ Setup Instructions
 
-3. **Run the Application**:
-   - Compile and execute the Java program.
-   - Follow the prompts in the console to interact with the application.
+### Prerequisites
+- **Java Development Kit (JDK)**
+- **MySQL Server**
+- **Git**
 
-## Additional Information
-This project demonstrates the practical application of database integration in Java, showcasing essential concepts in user management, budget tracking, and shopping cart functionalities. It serves as a hands-on project for learning and applying database management skills in real-world scenarios.
+### Steps
+1. Clone the repository from GitHub:
+   ```bash
+   git clone <repository-url>
+   ```
+2. Navigate to the project directory and locate the `db` folder.
+3. Import the `init.sql` file into your MySQL database to create the required schema and initial data:
+   ```bash
+   mysql -u <username> -p < database_name < db/init.sql
+   ```
+4. Configure the database connection in the `DatabaseConnection.java` file.
+5. Compile and run the Java application:
+   ```bash
+   javac GreenCartApp.java
+   java GreenCartApp
+   ```
 
-For further inquiries or feedback, please contact: **Marielle J. Rectin**.
+---
+
+## 📂 Directory Structure
+- **/src**: Contains all source code files.
+- **/db**: Includes `init.sql` to initialize the database schema and data.
+
+---
+
+## 💡 How It Works
+1. **Sign Up & Log In**: Users can register an account and log in to access personalized shopping features.
+2. **Budget Management**: Users can set an initial budget and modify it as needed.
+3. **Shopping**:
+   - Add items to the cart by specifying type, name, price, and quantity.
+   - View the shopping list with details of items, total cost, and remaining budget.
+   - Remove items from the cart if needed.
+4. **Reward Points**: Earn points based on purchases and see them reflected in the shopping list.
+5. **Eco-Friendly Tips**: Receive actionable advice with each shopping interaction to promote sustainability.
+
+---
+
+## 🚀 Future Enhancements
+- **📊 Detailed Analytics**: Provide users with insights into their shopping habits and spending trends.
+- **📱 Mobile Integration**: Expand to a mobile-friendly interface.
+- **🌍 Advanced Eco-Tips**: Offer more dynamic and personalized sustainability tips.
+
+---
+
+## 🤝 Contribution
+Contributions are welcome! Feel free to fork the repository, create a feature branch, and submit a pull request.
+
+---
+
+Enjoy a sustainable shopping experience with 🌿 GreenCart!
